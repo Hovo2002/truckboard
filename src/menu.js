@@ -8,6 +8,7 @@ import VideocamIcon from "@material-ui/icons/Videocam";
 import AssessmentIcon from "@material-ui/icons/Assessment";
 import MoneyIcon from "@material-ui/icons/AttachMoney";
 import AccessibilityIcon from "@material-ui/icons/Accessibility";
+import ClassIcon from "@material-ui/icons/Class";
 
 import LoadsPage from "./pages/loads/LoadsPage";
 import TruckBoardPage from "./pages/truckboard/TruckBoardPage";
@@ -17,6 +18,7 @@ import VideoPage from "./pages/videos/VideoPage";
 import Payroll from "./pages/Payroll";
 import StatisticsPage from "./pages/statistics/StatisticsPage";
 import DirectoryPage from "./pages/directory/DirectoryPage";
+import TestPage from "./pages/test/TestPage";
 
 export default [
   {
@@ -80,5 +82,11 @@ export default [
     link: "/directory",
     icon: <AccessibilityIcon />,
     component: DirectoryPage
+  },
+  {
+    name: "Test",
+    link: "/test",
+    icon: <ClassIcon />,
+    component: TestPage
   }
 ];
