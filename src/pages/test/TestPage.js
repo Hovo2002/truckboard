@@ -4,8 +4,10 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 
-import TbTabBar from "./../../components/TbTabBar";
+import TbTabIcons from "./../../components/TbTabIcons";
 import tabs from "./test-page-data";
+//import TbPage from "../../components/TbPage";
+//import contentTestData from "./content-test-data"; 
 
 class TestPage extends Component {
   render() {
@@ -14,7 +16,11 @@ class TestPage extends Component {
       <div>
         <div className={classes.title}>Test</div>
         <Paper className={classes.root} elevation={4}>
-          <TbTabBar tabs={tabs} />
+          <TbTabIcons tabs={tabs}/>
+          {/* {contentTestData.map(data => {
+            return <TbPage header={data.header} content={data.content} />  
+          })
+          } */}
         </Paper>
       </div>
     );
